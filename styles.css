@@ -49,13 +49,13 @@ ul,ol{list-style:none}
 .hero__label{font:500 13px/2 var(--font);letter-spacing:.32em;text-transform:uppercase;position:relative;z-index:3}
 .hero__label::after{content:"";display:block;width:34px;height:1px;background:var(--ink);margin-top:10px}
 .hero__label--r{text-align:left}
-.hero__stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0}
-.hero__word{width:100%;height:auto;max-height:28vh;object-fit:contain;opacity:0;animation:fadeUp 1.2s var(--ease) .1s forwards}
-.hero__athlete{position:absolute;left:50%;bottom:-36px;height:calc(100% + 60px);max-height:640px;transform:translateX(-46%);z-index:2;display:flex;align-items:flex-end;opacity:0;animation:fadeUp 1.2s var(--ease) .35s forwards}
+.hero__stage{position:relative;display:flex;align-items:flex-end;justify-content:center;min-height:0}
+.hero__word{width:100%;height:auto;max-height:28vh;object-fit:contain;margin-bottom:24px;opacity:0;animation:fadeUp 1.2s var(--ease) .1s forwards}
+.hero__athlete{position:absolute;left:50%;bottom:0;height:calc(100% + 10px);max-height:600px;transform:translateX(-50%);z-index:2;display:flex;align-items:flex-end;opacity:0;animation:fadeUp 1.2s var(--ease) .35s forwards}
 .hero__athlete img{height:100%;width:auto;max-width:none;position:relative;z-index:1}
-.hero__shadow{position:absolute;left:8%;right:2%;bottom:-2px;height:38px;background:radial-gradient(ellipse at center,rgba(0,0,0,.32),rgba(0,0,0,0) 70%);filter:blur(4px)}
+.hero__shadow{position:absolute;left:4%;right:6%;bottom:-34px;height:34px;background:radial-gradient(ellipse at center,rgba(0,0,0,.32),rgba(0,0,0,0) 70%);filter:blur(4px)}
 @keyframes fadeUp{from{opacity:0;transform:translate(var(--tx,0),24px)}to{opacity:1;transform:translate(var(--tx,0),0)}}
-.hero__athlete{--tx:-46%}
+.hero__athlete{--tx:-50%}
 .hero__foot{display:flex;justify-content:space-between;align-items:flex-end;position:relative;z-index:3}
 .hero__cta{display:flex;align-items:center;gap:34px}
 
@@ -75,7 +75,7 @@ ul,ol{list-style:none}
 .split__text p:not(.label){max-width:40ch;color:var(--ink-2)}
 .split__text .btn{margin-top:10px}
 .split__img{overflow:hidden}
-.split__img img{width:100%;height:100%;object-fit:cover;object-position:56% 35%;filter:grayscale(1) contrast(1.05)}
+.split__img img{width:100%;height:100%;object-fit:cover;object-position:34% 60%;filter:grayscale(1) contrast(1.05)}
 
 /* Facts */
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:64px var(--pad);background:var(--bg-2)}
@@ -190,7 +190,8 @@ ul,ol{list-style:none}
   .hero__stage{align-items:flex-end}
   .hero__word{max-height:none;width:100%;margin-bottom:17%;position:relative;z-index:1}
   .hero__athlete{z-index:2}
-  .hero__athlete{height:100%;bottom:6px;--tx:-48%}
+  .hero__athlete{height:80%;bottom:34px;--tx:-50%}
+  .hero__shadow{bottom:-22px;height:24px}
   .hero__foot{flex-direction:column-reverse;align-items:flex-start;gap:28px;margin-top:20px}
   .hero__label--r{display:none}
   .hero__cta{width:100%;gap:26px}
