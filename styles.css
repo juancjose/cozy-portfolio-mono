@@ -188,10 +188,10 @@ ul,ol{list-style:none}
   .hero{min-height:auto;padding:8px var(--pad) 36px;grid-template-rows:auto auto auto}
   .hero__stage{height:min(118vw,500px);margin-top:4px}
   .hero__stage{align-items:flex-end}
-  .hero__word{max-height:none;width:100%;margin-bottom:17%;position:relative;z-index:1}
+  .hero__word{max-height:none;width:100%;margin-bottom:9%;position:relative;z-index:1}
   .hero__athlete{z-index:2}
-  .hero__athlete{height:80%;bottom:34px;--tx:-50%}
-  .hero__shadow{bottom:-22px;height:24px}
+  .hero__athlete{height:82%;bottom:54px;--tx:-50%}
+  .hero__shadow{bottom:-10px;height:22px}
   .hero__foot{flex-direction:column-reverse;align-items:flex-start;gap:28px;margin-top:20px}
   .hero__label--r{display:none}
   .hero__cta{width:100%;gap:26px}
